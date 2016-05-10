@@ -3,3 +3,13 @@ layout: default
 ---
 	
 <h1>Jekyll test site</h1>
+
+
+<ul>
+	{% for news in site.catigories.recently-discovered %}
+	<li>
+		<a href="">{{news.title}}</a>
+		<p>{{news.meta}}</p>
+	</li>
+	{% endfor %}
+</ul>
