@@ -8,10 +8,14 @@
 
 	<header>
 		<h1>Brad's blog</h1>
-		{% include nav.html %}
+		{% include nav.html navclass='nav-top' %}
 	</header>
 
 {{content}}
+
+	<footer>
+		{% include nav.html navclass='nav-bottom' %}
+	</footer>
 
 </body>
 </html>
